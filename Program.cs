@@ -176,3 +176,38 @@ Console.WriteLine(mixedArray[1]);
 
 
 //......................................................
+
+//this the basic structure of the code writing
+// namespace projectName
+// {
+//     class Program{
+//         static void Main (string[] args){
+//             // the executable code has to be written inside main methode  here.
+//         }
+//     }
+
+// }
+
+//to read input from the console
+//Console.ReadLine();
+
+
+//datatypes
+string phrase="helllo world this is c sharp";  //=> takes double quotes;
+char onlyone= 'g' ;// takes a single characte in single quotes;
+// float, double, decimal.  => decimal is extremly precise.
+
+
+// working with strings
+//It is immutable, meaning that once a string object is created, its value cannot be changed. Instead of changing the value of a string, C# creates a new object with the desired value.
+
+Console.WriteLine(phrase.Length);
+
+// taking a substring from the string
+string SubStr= phrase.Substring(0,6); // this will return first 6 characters
+string remaingSubStr=phrase.Substring(6);
+
+Console.WriteLine(SubStr);
+Console.WriteLine(remaingSubStr);
+
+
