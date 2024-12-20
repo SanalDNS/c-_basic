@@ -145,6 +145,34 @@ Console.WriteLine("========================");
  //3. TO remove all elemnts in the list
 
  xyz.Clear();
+ Console.WriteLine("the length of list now:{0}",xyz.Count());
+//---------------------------------------------------------
 
- Console.WriteLine(xyz.Count())
+//4.  removing a range of elements
 
+List<int> abc =new List<int>{1000,2000,3000,4000,5000,6000,7000};
+abc.RemoveRange(0,2);  // it will remove element from index 0 to next 2 counts.
+foreach(var ttt in abc){
+    Console.WriteLine(ttt);
+}
+
+//an array or a List<T> in C# cannot hold multiple data types. In C#, arrays and lists are strongly typed collections, meaning that they can only store elements of a specific type.
+//Mixing different types would violate the type safety of C#. This would lead to runtime errors or unexpected behavior because the compiler cannot guarantee type consistency within an array or list.
+
+
+
+//.........................................................................................................
+//there is a approach called Object Array => it can store different datatypes
+
+object [] mixedArray= {10,"dubai",15.26, false};
+
+foreach(var yyyy in mixedArray){
+    Console.WriteLine(yyyy);
+}
+
+Console.WriteLine(mixedArray[1]);
+
+
+
+
+//......................................................
