@@ -210,4 +210,8 @@ string remaingSubStr=phrase.Substring(6);
 Console.WriteLine(SubStr);
 Console.WriteLine(remaingSubStr);
 
+string  wordChange=remaingSubStr.Replace("is","was"); // the first argument will be updated with the second argument.
+Console.WriteLine(wordChange);
 
+//objects in c#
+//In C#, object is the ultimate base type from which all types (both value types and reference types) derive. It is part of the System.Object class, and every type in C# either directly or indirectly inherits from it.
