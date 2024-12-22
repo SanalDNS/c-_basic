@@ -227,6 +227,12 @@ Console.WriteLine(wordChange);
 //the calling of a function in another .cs file.
 SecondFileClass.functions();
 
+
+string textss="malayalam";
+
+bool ispali=SecondFileClass.Pali(textss);
+
+Console.WriteLine(ispali);
 // 
 
 //objects in c#
