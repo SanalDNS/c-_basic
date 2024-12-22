@@ -2,11 +2,13 @@
 using System.Reflection.Metadata.Ecma335;
 using System.Security.Cryptography.X509Certificates;
 using System;
-using SecondFile;
+using SecondFile;  // this is name space
+using others;
 
 namespace Twooo{
     public class Ma{
-        public static void Main(string[] args){
+       public static async Task Main(string[] args) // the main should contain async keyword to perform asyn operation
+{
 
 
 
@@ -233,6 +235,9 @@ string textss="malayalam";
 bool ispali=SecondFileClass.Pali(textss);
 
 Console.WriteLine(ispali);
+
+await justOthers.runss();
+Console.WriteLine("after async");
 // 
 
 //objects in c#
