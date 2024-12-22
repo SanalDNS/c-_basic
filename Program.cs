@@ -1,5 +1,14 @@
 ﻿using System.Globalization;
+using System.Reflection.Metadata.Ecma335;
 using System.Security.Cryptography.X509Certificates;
+using System;
+using SecondFile;
+
+namespace Twooo{
+    public class Ma{
+        public static void Main(string[] args){
+
+
 
 string[] arr = { "an", "sa", "sr" };
 
@@ -145,7 +154,7 @@ Console.WriteLine("========================");
  //3. TO remove all elemnts in the list
 
  xyz.Clear();
- Console.WriteLine("the length of list now:{0}",xyz.Count());
+ Console.WriteLine("the length of list now:{0}",xyz.Count);
 //---------------------------------------------------------
 
 //4.  removing a range of elements
@@ -213,5 +222,17 @@ Console.WriteLine(remaingSubStr);
 string  wordChange=remaingSubStr.Replace("is","was"); // the first argument will be updated with the second argument.
 Console.WriteLine(wordChange);
 
+
+
+//the calling of a function in another .cs file.
+SecondFileClass.functions();
+
+// 
+
 //objects in c#
 //In C#, object is the ultimate base type from which all types (both value types and reference types) derive. It is part of the System.Object class, and every type in C# either directly or indirectly inherits from it.
+
+
+        }
+    }
+}
