@@ -5,6 +5,10 @@ using System;
 using SecondFile;  // this is name space
 using others;
 using carTesting;
+using Learn;
+using System.Reflection;
+
+
 namespace Twooo
 {
 
@@ -281,6 +285,13 @@ namespace Twooo
 
 
             testing.Calll();
+
+
+
+
+            A.AA newvariableDeligation = A.Sayhello;
+
+            newvariableDeligation("helllllooo");
 
         }
 
