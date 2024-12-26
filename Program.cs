@@ -306,6 +306,15 @@ namespace Twooo
             //Sum sumInstance = new Sum(); // Create an instance of the Sum class
             // Console.WriteLine(sumInstance.Add(1, 2)); //
 
+
+            //string newGreat = new Greeets();
+            //The compiler expects new Greeets() to return a string because you've declared the variable newGreat as a string. However, new Greeets() creates an object of type Greeets, not a string.
+            
+            Greeets newGreat=new Greeets();
+            //custom datatype , newObjectName = new className;
+            string ss=newGreat.Greet("sanal");
+            Console.WriteLine(ss);
+
         }
 
 
