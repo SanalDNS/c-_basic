@@ -7,6 +7,7 @@ using others;
 using carTesting;
 using Learn;
 using System.Reflection;
+using System.ComponentModel;
 
 
 namespace Twooo
@@ -289,9 +290,21 @@ namespace Twooo
 
 
 
-            A.AA newvariableDeligation = A.Sayhello;
+            A.AA newvariableDeligation = A.Sayhello; // the function in class A is being assigned to a new variable,using the delegation reference AA in class A
 
             newvariableDeligation("helllllooo");
+
+
+
+            //if i didnt use the static keywork on the methode this way of calling wont work.
+            Console.WriteLine(Sum.Add(1, 2));
+            //it will show an error like
+            //An object reference is required for the non-static field, method, or property 'Sum.Add'
+
+
+            //if i want to call the method without the static keyword, i would require to create a new instance of that class, then call the methode on that instance
+            //Sum sumInstance = new Sum(); // Create an instance of the Sum class
+            // Console.WriteLine(sumInstance.Add(1, 2)); //
 
         }
 
