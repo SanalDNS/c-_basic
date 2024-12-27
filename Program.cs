@@ -309,11 +309,17 @@ namespace Twooo
 
             //string newGreat = new Greeets();
             //The compiler expects new Greeets() to return a string because you've declared the variable newGreat as a string. However, new Greeets() creates an object of type Greeets, not a string.
-            
-            Greeets newGreat=new Greeets();
+
+            Greeets newGreat = new Greeets();
             //custom datatype , newObjectName = new className;
-            string ss=newGreat.Greet("sanal");
+            string ss = newGreat.Greet("sanal");
             Console.WriteLine(ss);
+
+            const string wwww = "domain";  // no reassignment is possible
+                                           // wwww="hellllo";
+            Console.WriteLine(wwww);
+
+//PascalCase =>  HelloWorld
 
         }
 
