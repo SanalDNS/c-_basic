@@ -319,7 +319,21 @@ namespace Twooo
                                            // wwww="hellllo";
             Console.WriteLine(wwww);
 
-//PascalCase =>  HelloWorld
+
+            //PascalCase =>  HelloWorld
+
+            //type conversion
+            string sa = "123";
+            int ssq = Convert.ToInt32(sa);
+            Console.WriteLine(ssq);
+
+
+double eeee = 10.0002;
+double rrrr = eeee + 0.11;
+Console.WriteLine(rrrr);
+
+
+
 
         }
 
